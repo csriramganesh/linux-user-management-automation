@@ -157,16 +157,21 @@ Creates multiple Linux users automatically from a CSV file in a single run.
 
 ## Repository Structure
 ```text
+## Project Structure
 linux-user-management-automation
 ├── README.md
 ├── scripts
 │   ├── check_user.sh
 │   ├── user_create.sh
 │   ├── delete_user.sh
-│   └── sudo_access.sh
+│   ├── sudo_access.sh
+│   └── bulk_user_creation.sh
+├── data
+│   └── users_list.csv
 └── screenshots
     ├── feature-01-user-check
     ├── feature-02-create-user
     ├── feature-03-delete-user
-    └── feature-04-sudo-access
+    ├── feature-04-sudo-access
+    └── feature-05-bulk-user-creation
 ```
