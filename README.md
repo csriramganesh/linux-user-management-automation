@@ -75,12 +75,29 @@ Successfully creates a new user and handles duplicate user case.
 ![User Creation Test](screenshots/feature-02-create-user/user_creation_success_exists.png)
 
 ---
+## Feature 03 — Delete User
+
+**Script:** `scripts/delete_user.sh`
+
+**Usage:**
+```bash
+sudo bash scripts/delete_user.sh <username>
+```
+
+**What it does:**
+- Checks if the user exists before attempting deletion
+- Removes the user along with their home directory
+- Shows clear success or error messages
+
+![Delete User Script](screenshots/feature-03-delete-user/delete_user_script.png)
+![Delete User Success](screenshots/feature-03-delete-user/User_deletion_success.png)
+
 
 ## Skills Practiced
 * Bash Scripting
 * Linux User Management
 * Conditional Statements
-* Linux Commands (`id`, `useradd`, `chpasswd`)
+* Linux Commands (id, useradd, chpasswd, userdel)
 * File Permissions
 * Git
 * GitHub
@@ -89,13 +106,16 @@ Successfully creates a new user and handles duplicate user case.
 ---
 
 ## Repository Structure
+
 ```text
 linux-user-management-automation
 ├── README.md
 ├── scripts
 │   ├── check_user.sh
-│   └── user_create.sh
+│   ├── user_create.sh
+│   └── delete_user.sh
 └── screenshots
     ├── feature-01-user-check
-    └── feature-02-create-user
+    ├── feature-02-create-user
+    └── feature-03-delete-user
 ```
