@@ -55,12 +55,12 @@ This script creates a new Linux user with a home directory and sets a default pa
 
 ### Usage
 ```bash
-sudo bash scripts/user_create.sh username
+ ./scripts/user_create.sh username
 ```
 
 Example:
 ```bash
-sudo bash scripts/user_create.sh john
+ ./scripts/user_create.sh john
 ```
 
 ---
@@ -81,11 +81,11 @@ Successfully creates a new user and handles duplicate user case.
 
 **Usage:**
 ```bash
-sudo bash scripts/delete_user.sh <username>
+./scripts/delete_user.sh <username>
 ```
 Example:
 ```bash
-sudo bash scripts/user_create.sh devops_user
+./scripts/delete_user.sh devops_user
 ```
 
 **What it does:**
