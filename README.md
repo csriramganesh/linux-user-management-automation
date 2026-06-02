@@ -83,6 +83,10 @@ Successfully creates a new user and handles duplicate user case.
 ```bash
 sudo bash scripts/delete_user.sh <username>
 ```
+Example:
+```bash
+sudo bash scripts/user_create.sh devops_user
+```
 
 **What it does:**
 - Checks if the user exists before attempting deletion
