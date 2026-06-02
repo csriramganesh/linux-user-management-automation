@@ -123,6 +123,26 @@ Grants sudo (admin) privileges to an existing Linux user.
 **Test Results**
 ![sudo access test](screenshots/feature-04-sudo-access/sudo_access_test.png)
 
+
+## Feature 05 — Bulk User Creation
+
+### What it does
+Creates multiple Linux users automatically from a CSV file in a single run.
+
+### Files
+- `scripts/bulk_user_creation.sh` — main script
+- `data/users_list.csv` — input file with usernames
+
+### How to run
+```bash
+./scripts/bulk_user_creation.sh
+```
+
+### Output
+![Bulk User Creation](screenshots/feature-05-bulk-user-creation/Bulk_create_script.png)
+
+![Bulk User Creation Success](screenshots/feature-05-bulk-user-creation/Bulk_create_success.png)
+
 ## Skills Practiced
 * Bash Scripting
 * Linux User Management
