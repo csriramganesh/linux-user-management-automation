@@ -96,12 +96,38 @@ Example:
 ![Delete User Script](screenshots/feature-03-delete-user/delete_user_script.png)
 ![Delete User Success](screenshots/feature-03-delete-user/User_deletion_success.png)
 
+## Feature 04 — Sudo Access Management
+
+### What it does
+Grants sudo (admin) privileges to an existing Linux user.
+
+### Script
+`scripts/sudo_access.sh`
+
+### Usage
+```bash
+ ./scripts/sudo_access.sh username
+```
+
+### How it works
+- Takes username as input
+- Checks if user exists
+- If yes → grants sudo access
+- If no → shows error message
+
+### Screenshots
+
+**Script Code**
+![sudo access script](screenshots/feature-04-sudo-access/sudo_access_script.png)
+
+**Test Results**
+![sudo access test](screenshots/feature-04-sudo-access/sudo_access_test.png)
 
 ## Skills Practiced
 * Bash Scripting
 * Linux User Management
 * Conditional Statements
-* Linux Commands (id, useradd, chpasswd, userdel)
+* Linux Commands (id, useradd, chpasswd, userdel, usermod)
 * File Permissions
 * Git
 * GitHub
@@ -110,16 +136,17 @@ Example:
 ---
 
 ## Repository Structure
-
 ```text
 linux-user-management-automation
 ├── README.md
 ├── scripts
 │   ├── check_user.sh
 │   ├── user_create.sh
-│   └── delete_user.sh
+│   ├── delete_user.sh
+│   └── sudo_access.sh
 └── screenshots
     ├── feature-01-user-check
     ├── feature-02-create-user
-    └── feature-03-delete-user
+    ├── feature-03-delete-user
+    └── feature-04-sudo-access
 ```
